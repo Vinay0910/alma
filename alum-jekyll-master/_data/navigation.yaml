@@ -1,0 +1,18 @@
+navbar:
+  navtabs:
+    - text: Home
+      link: /
+    - text: Connect
+      link: /https://frcrce.almaconnect.com
+    - text: About
+      link: /about.html
+    - text: Activities Report
+      link: /activity_report.html
+    #- text: Distinguished Alumni
+    #  link: /distinguished_alumni.html
+    - text: Contact
+      link: /contact.html
+    - text: Contributions
+      link: /contributions.html
+    # - text: Blogs
+    #   link: /blog.html

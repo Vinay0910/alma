@@ -1,0 +1,53 @@
+support:
+  teams:
+    - title: Team ABADHA
+      text: The team conceptualizes, designs, manufactures and scrutinizes a One-Manned  All-Terrain Vehicle capable of comfortably commute 90 percentile of the population through any type of terrain sustainably for extended periods of time.
+      image: assets/images/team_abadha.jpg
+      link: https://www.facebook.com/teamabadha.crce/
+      pdf: assets/pdf/abadha.pdf
+    - title: Team MAVERICKS
+      text: The team focuses on creating Unmanned Aerial Vehicles which have extensive applications in various fields such as search and rescue operations, disaster management, geographic mapping and more. 
+      image: assets/images/team_mavericks.jpg
+      link: https://mavericks-7734b.firebaseapp.com/
+      pdf: assets/pdf/mavericks.pdf
+    - title: Team CFR
+      text: CRCE Formula racing team is a Fr.Conceicao Rodrigues college of engineering’s Formula SAE team. Driven by mutual passion for automobiles and zeal to learn formed the essence of CRCE Formula Racing. CRCE Formula racing provides an unrivalled learning experience,that allows engineers to integrate classroom concepts with practical applications.
+      image: assets/images/default.svg
+      link: http://www.frcrce.ac.in/index.php/students/project-groups/cfr
+      pdf: assets/pdf/cfr.pdf
+    - title: Team ROBOCON
+      text: The Asia-Pacific Robot contest (ABU Robocon) is an international Robotics competition which witnesses the best robots from various nations competing against each other for a particular task based on the culture of the country hosting it.
+      image: assets/images/team_robocon.jpg
+      link: http://roboconcrce.org/
+      pdf: assets/pdf/robocon.pdf
+    - title: Team VAYUSHASTRA
+      text: A student team focused on designing and building state of the art UAVs (Unmanned Aerial Vehicles) for participation in the SAE Aero Design Competition.
+      image: assets/images/team_vayu.jpeg
+      link: http://www.vaayushastra.in/
+      pdf: assets/pdf/vayushastra.pdf
+    - title: Project-Cell
+      text: | 
+            Currently working for 3 projects competing under Eyantra Ideas Competition.
+            •	Self Balanced Walking Machine controlled by brain Signal for Specially Abled people
+            This project will help paralyzed people or people having Difficulties to walk , being able to walk again with the help of Brain Signals. And detecting Missed object by Image Processing.
+            •	Plastic Recycling Machine
+            Reverse vending machine to recycle waste plastic bottles and convert it into 3d printer filament in a single unit
+            •	Build a line following robot implementing path planning and wall following algorithm to pick and place construction materials at disaster affected areas.
+      image: assets/images/project-cell.png
+      link: NULL
+      pdf: assets/pdf/project-cell.pdf
+
+alumnis:
+  - name: Mr. Suresh Balakrishnan
+    text: Through his foundation STULZ CHSPL (INDIA) PVT. LTD has been providing financial sponsorship of Rs. 5 Lakhs to economically backward but needy students since year 2018.
+    batch: 1995, Production Batch
+  - name: Production Batch, 1991
+    text: Donated around 2 lakhs towards the purchase of Solidworks,3D CAD design software, analysis software, and product data management software.
+    batch: null
+  - name: Mr. Suresh Balakrishnan
+    text: Gave a scholarship of Rs.5 Lakhs to meritorious students through his foundation in year 2019-2020
+    batch: 1995, Production Batch
+  - name: Production Batch, 1994
+    text: Donated around 1.35 lakhs towards facility development in our institute
+    batch: null
+    

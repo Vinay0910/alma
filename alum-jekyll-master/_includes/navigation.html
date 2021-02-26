@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar nav-underline  shadow-sm" style="background-color: #ecbd00;">
+    <div class="navbar-nav">
+        <ul class="navbar-expand navbar-nav bd-navbar-nav flex-column flex-sm-row">
+            <li style="height: 5px; ">&nbsp;</li>
+            {% for navtab in site.data.navigation.navbar.navtabs %}
+            {% if page.url == navtab.link %}
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" style="text-align: center; color: black;">{{ navtab.text}}</a>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href='{{ navtab.link  | remove_first: "/" | default: "index.html" }}' style="text-align: center; color: rgb(31, 31, 31)">{{ navtab.text}}</a>
+                </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</nav>

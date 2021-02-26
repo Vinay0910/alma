@@ -1,0 +1,89 @@
+<script>
+    function checkvalid() {
+        var amount = document.getElementById('inputAmount');
+        var inputAmount = document.forms['RegForm']['amount'].value;
+        var inputPAN = document.getElementById('inputPAN').value;
+        var errcheck = document.getElementById('errcheck');
+        var submitbutton = document.getElementById('submit');
+        amount.onekeyup = function (event) {
+            if ((inputAmount > 2000) && (inputPAN == '')) {
+                errcheck.innerHTML = 'Please enter PAN no';
+                submitbutton.setAttribute("inactive", true)
+                return false;
+            }
+            else {
+                submitbutton.removeAttribute("inactive", false);
+                return true;
+            }
+        }();
+    }
+    function submitCheck() {
+        var amount = document.getElementById('inputAmount');
+        var inputAmount = document.forms['RegForm']['amount'].value;
+        var inputPAN = document.getElementById('inputPAN').value;
+        var errcheck = document.getElementById('errcheck');
+        var submitbutton = document.getElementById('submit');
+        if ((inputAmount > 2000) && (inputPAN == '')) {
+            alert("Enter your PAN number");
+            // event.preventDefault();
+            // event.stopPropagation();
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+</script>
+<form name="RegForm" action="https://formspree.io/xknoeave" method="POST" class="needs-validation">
+    <div class="form-row">
+        <div class="form-group col-xs-2"></div>
+        <div class="form-group col-md-5">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Joe Smith" name="name" required
+                autofocus>
+        </div>
+        <div class="form-group col-md-1"></div>
+        <div class="form-group col-md-5">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="example@email.com" name="emailid"
+                required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-xs-2"></div>
+        <div class="form-group col-md-5">
+            <label for="inputId">Transaction Id</label>
+            <input type="text" class="form-control" id="inputId" name="transactId" required>
+        </div>
+        <div class="form-group col-md-1"></div>
+        <div class="form-group col-md-5">
+            <label for="inputchoice">Donation Towards:</label>
+            <select id="inputchoice" class="form-control" name="choice" required>
+                <option selected>Select...</option>
+                <option value="ABADHA">ABADHA</option>
+                <option value="Mavericks">Mavericks</option>
+                <option value="CFR">CFR</option>
+                <option value="Robocon">Robocon</option>
+                <option value="Vayushastra">Vayushastra</option>
+                <option value="ProjectCell">ProjectCell</option>
+                <option value="AgnelCharityTrust">Agnel Charity Trust</option>
+                <option value="Contibute to teams">Contibute to teams</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-xs-2"></div>
+        <div class="form-group col-md-5">
+            <label for="inputAmount">Amount</label>
+            <input type="number" onkeyup="return checkvalid();" class="form-control" id="inputAmount" name="amount"
+                required>
+        </div>
+        <div class="form-group col-md-1"></div>
+        <div class="form-group col-md-5">
+            <label for="inputPAN">Pan No <span style="font-weight: 0.7rem;font-size: 0.7rem;"></span></label>
+            <input type="text" class="form-control" id="inputPAN" name="PAN" required>
+            <p id="errcheck"></p>
+        </div>
+    </div>
+    <input id="submit" type="submit" class="btn btn-outline-success" value="Sign in"/button>
+</form>
